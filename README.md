@@ -46,7 +46,7 @@ After downloading the datasets, you are supposed to put them into `./` and the f
 
 ## 2. Download the my model weights
 
-Download the following files and place them in the `./pre_trained_weights` directory:
+Download the following files and place them in the `./models` directory:
 
 通过网盘分享的文件：The weights I've trained.zip
 链接: https://pan.baidu.com/s/1tCpnephidWLbFVi9jI-ieA?pwd=iirm 提取码: iirm 
@@ -56,16 +56,19 @@ Download the following files and place them in the `./pre_trained_weights` direc
 ## 3. Usage
 
 
-First, train the Pure VM-UNet of Branch 1. The trained weights will be saved in `./result_branch1/`.
+First, train the BRnet. The trained weights will be saved in `./models`.
 
 ```bash
-bash test.sh
+python train.py
 ```
 
-Then, use the trained weights to predict the test set images and obtain pred_masks.
+Then, use the trained weights to predict the test set images and obtain segmentation result.
+
+Check the 'outputs/' folder for prediction masks.
+
+Check the 'output2/' folder for difference and overlay maps.
 
 ```bash
-bash train.sh
+python val.py 
 ```
 
-Finally, train the SAM-VMNet of Branch 2. The trained weights will be saved in `./result_branch1/`.
