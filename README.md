@@ -22,26 +22,32 @@ After downloading the datasets, you are supposed to put them into `./` and the f
 
 ```
  Make sure to put the files as the following structure:
-            <dataset name>
-            ├── images
-            |   ├── 0a7e06.jpg
-            │   ├── 0aab0a.jpg
-            │   ├── 0b1761.jpg
-            │   ├── ...
-            |
-            └── masks
-                ├── 0
-                |   ├── 0a7e06.png
-                |   ├── 0aab0a.png
-                |   ├── 0b1761.png
-                |   ├── ...
-                |
-                ├── 1
-                |   ├── 0a7e06.png
-                |   ├── 0aab0a.png
-                |   ├── 0b1761.png
-                |   ├── ...
-                ...
+       <dataset name>
+            ├── train/
+            │   ├── images
+            │   ├── 0a7e06.jpg
+            │   │   ├── 0aab0a.jpg
+            │   │   ├── 0b1761.jpg
+            │   │   ├── ...
+            │   |
+            │   └── masks
+            │       ├── 0
+            │       |   ├── 0a7e06.png
+            │       |   ├── 0aab0a.png
+            │       |   ├── 0b1761.png
+            │       |   ├── ...
+            │       |
+            │       ├── 1
+            │       |   ├── 0a7e06.png
+            │       |   ├── 0aab0a.png
+            │       |   ├── 0b1761.png
+            │       |   ├── ...
+            ├── val/
+            │   ├── images/
+            │   └── masks/
+            └── test/
+            ├── images/
+            └── masks/
 ```
 
 ## 2. Download the my model weights
