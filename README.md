@@ -46,7 +46,7 @@ After downloading the datasets, you are supposed to put them into `./` and the f
 
 ## 2. Download the my model weights
 
-Download the following files from Google Drive and place them in the `./pre_trained_weights` directory:
+Download the following files and place them in the `./pre_trained_weights` directory:
 
 通过网盘分享的文件：The weights I've trained.zip
 链接: https://pan.baidu.com/s/1tCpnephidWLbFVi9jI-ieA?pwd=iirm 提取码: iirm 
