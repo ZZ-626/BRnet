@@ -48,20 +48,13 @@ After downloading the datasets, you are supposed to put them into `./` and the f
 
 Download the following files from Google Drive and place them in the `./pre_trained_weights` directory:
 
-- [vmamba_small_e238_ema.pth](https://drive.google.com/file/d/1XL7JuacjoZCr8w2b0c8CaQn8b0hREblk/view?usp=drive_link)
-
-- [best-epoch142-loss0.3230.pth](https://drive.google.com/file/d/1jsZKakA4FrYaMXNp6qkVtxXwwcJQKrW4/view?usp=drive_link)
-
-- [best-epoch142-loss0.3488.pth](https://drive.google.com/file/d/1OKIzUM_L6FeEqyuIsAMn4x-FHptizTkG/view?usp=drive_link)
-
-- [MedSAM_model.pth](https://drive.google.com/file/d/1O5IVkcVxd2RtOcZEKuTR3WkOBiosHBfz/view?usp=drive_link)
+通过网盘分享的文件：The weights I've trained.zip
+链接: https://pan.baidu.com/s/1tCpnephidWLbFVi9jI-ieA?pwd=iirm 提取码: iirm 
+--来自百度网盘超级会员v6的分享
 
 
 ## 3. Usage
 
-```bash
-bash train.sh
-```
 
 First, train the Pure VM-UNet of Branch 1. The trained weights will be saved in `./result_branch1/`.
 
