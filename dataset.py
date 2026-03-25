@@ -20,25 +20,32 @@ class Dataset(torch.utils.data.Dataset):
         Note:
             Make sure to put the files as the following structure:
             <dataset name>
-            ├── images
-            |   ├── 0a7e06.jpg
-            │   ├── 0aab0a.jpg
-            │   ├── 0b1761.jpg
-            │   ├── ...
-            |
-            └── masks
-                ├── 0
-                |   ├── 0a7e06.png
-                |   ├── 0aab0a.png
-                |   ├── 0b1761.png
-                |   ├── ...
-                |
-                ├── 1
-                |   ├── 0a7e06.png
-                |   ├── 0aab0a.png
-                |   ├── 0b1761.png
-                |   ├── ...
-                ...
+            ├── train/
+            │   ├── images
+            │   ├── 0a7e06.jpg
+            │   │   ├── 0aab0a.jpg
+            │   │   ├── 0b1761.jpg
+            │   │   ├── ...
+            │   |
+            │   └── masks
+            │       ├── 0
+            │       |   ├── 0a7e06.png
+            │       |   ├── 0aab0a.png
+            │       |   ├── 0b1761.png
+            │       |   ├── ...
+            │       |
+            │       ├── 1
+            │       |   ├── 0a7e06.png
+            │       |   ├── 0aab0a.png
+            │       |   ├── 0b1761.png
+            │       |   ├── ...
+            ├── val/
+            │   ├── images/
+            │   └── masks/
+            └── test/
+            ├── images/
+            └── masks/
+
         """
         self.img_ids = img_ids
         self.img_dir = img_dir
