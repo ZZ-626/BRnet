@@ -294,7 +294,7 @@ class BiFormer_resnet18(BiFormer):
 
             fused_features.append(self.extra_norms[i](attended_features))
 
-        # 多尺度特征金字塔融合（VSC-PFM）
+        # VSC-PFM
         enhanced_features = [None] * 4
         enhanced_features[3] = fused_features[3]
 
