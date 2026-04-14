@@ -234,19 +234,7 @@ class BiFormer_resnet18(BiFormer):
                 SimAM(channels=self.embed_dim[i])
             )
 
-        # VSC-PFM
-        self.multiscale_fusion = nn.ModuleList()
-        for i in range(3):
-            self.multiscale_fusion.append(
-                nn.Sequential(
-                    nn.Conv2d(self.embed_dim[i] + self.embed_dim[i + 1], self.embed_dim[i], kernel_size=1),
-                    nn.BatchNorm2d(self.embed_dim[i]),
-                    nn.ReLU(inplace=True),
-                    nn.Conv2d(self.embed_dim[i], self.embed_dim[i], kernel_size=3, padding=1),
-                    nn.BatchNorm2d(self.embed_dim[i]),
-                    nn.ReLU(inplace=True)
-                )
-            )
+
 
         # USE CARAFE
         # CARAFE参数说明:
