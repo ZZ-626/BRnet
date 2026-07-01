@@ -87,8 +87,8 @@ If you use this project in your research, please cite the following paper:
   author = {Zhan Zhang, Hong Shao, Wencheng Cui},
   title = {BRNet: A Dual-Backbone X-ray Coronary Angiography Segmentation Network Based on Multi-Scale Fusion and Dynamic Detail Reconstruction},
   year = {2026},
-  doi = {10.5281/zenodo.19220141},
-  url = {[https://doi.org/10.5281/zenodo.19220141](https://doi.org/10.5281/zenodo.19220141)}
+  doi = {10.5281/zenodo.19313088},
+  url = {[https://doi.org/10.5281/zenodo.19313088](https://doi.org/10.5281/zenodo.19313088)}
 }
 ```
 
