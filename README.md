@@ -83,12 +83,17 @@ python val.py
 If you use this project in your research, please cite the following paper:
 
 ```bibtex
-@misc{BRNet2026,
-  author = {Zhan Zhang, Hong Shao, Wencheng Cui},
-  title = {BRNet: A Dual-Backbone X-ray Coronary Angiography Segmentation Network Based on Multi-Scale Fusion and Dynamic Detail Reconstruction},
-  year = {2026},
-  doi = {10.5281/zenodo.19313088},
-  url = {[https://doi.org/10.5281/zenodo.19313088](https://doi.org/10.5281/zenodo.19313088)}
+@article{Zhang2026BRNet,
+  author    = {Zhang, Zhan and Shao, Hong and Cui, Wencheng},
+  title     = {{BRNet}: A Dual-Backbone {X-Ray} Coronary Angiography Segmentation Network Based on Multi-Scale Fusion and Dynamic Detail Reconstruction},
+  journal   = {Applied Sciences},
+  year      = {2026},
+  volume    = {16},
+  number    = {14},
+  pages     = {6960},
+  doi       = {10.3390/app16146960},
+  url       = {https://doi.org/10.3390/app16146960},
+  publisher = {MDPI}
 }
 ```
 
